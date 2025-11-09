@@ -2,7 +2,6 @@
   "name": "@kleros/ui",
   "module": "src/index.ts",
   "type": "module",
-  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
