@@ -1,0 +1,14 @@
+@import "./font.css";
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  background: linear-gradient(
+    90deg,
+    var(--color-neutral-900) 0%,
+    var(--color-stone-900) 100%
+  );
+  color: var(--color-stone-300);
+}
