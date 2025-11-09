@@ -1,0 +1,16 @@
+{
+  "name": "@kleros/contracts",
+  "exports": {
+    "./RPS": "./dist/RPS.json"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "build": "ts-node ./build.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "solc": "^0.8.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

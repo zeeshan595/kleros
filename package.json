@@ -1,6 +1,7 @@
 {
   "name": "kleros",
   "workspaces": [
-    "./apps/*"
+    "./apps/*",
+    "./packages/*"
   ]
 }

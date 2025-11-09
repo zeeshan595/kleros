@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import { useContract } from "./contract.hook";
-import RPS from "../contracts/RPS.json";
+import RPS from "@kleros/contracts/RPS";
 
 const abi = RPS.contracts["RPS.sol"].RPS.abi;
 const bytecode = RPS.contracts["RPS.sol"].RPS.evm.bytecode.object;
