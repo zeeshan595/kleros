@@ -1,2 +1,0 @@
-# Kleros RPS
-
