@@ -1,10 +1,10 @@
 export enum Environment {
-  Dev = "development",
+  Dev = "dev",
   Prod = "prod",
 }
 
 export const environment =
-  (process.env.NODE_ENV as Environment) ?? Environment.Dev;
+  (process.env.VITE_ENV as Environment) ?? Environment.Dev;
 
 export const config = {
   [Environment.Dev]: {
