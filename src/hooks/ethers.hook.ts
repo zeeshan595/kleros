@@ -114,11 +114,11 @@ export function useEthers() {
       const code = await provider.getCode(contractAddress);
       const computedHash = ethers.keccak256(code);
       const compiledHash = ethers.keccak256(
-        this.compiledContract.evm.deployedBytecode.object
+        `0x${this.compiledContract.evm.deployedBytecode.object}`
       );
-      console.log(computedHash);
-      console.log("===");
-      console.log(compiledHash);
+      if (computedHash !== compiledHash) {
+        throw new Error("Smart contract failed validation");
+      }
     }
   }
 
