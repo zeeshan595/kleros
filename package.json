@@ -5,7 +5,6 @@
   "scripts": {
     "dev": "vite",
     "contracts": "ts-node scripts/contracts.ts",
-    "prebuild": "npm run contracts",
     "build": "vite build"
   },
   "dependencies": {
