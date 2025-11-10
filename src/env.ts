@@ -4,7 +4,7 @@ export enum Environment {
 }
 
 export const environment =
-  (process.env.VITE_ENV as Environment) ?? Environment.Dev;
+  (import.meta.env.VITE_ENV as Environment) ?? Environment.Dev;
 
 export const config = {
   [Environment.Dev]: {
