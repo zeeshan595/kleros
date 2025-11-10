@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { GameStateType, MoveType, useRpsGame } from "../../hooks/game.hook";
 import { useContext, useEffect, useState } from "react";
-import Opponent from "./opponent";
-import Owner from "./owner";
 import { LoadingContext } from "../../context/loading.context";
 import { ErrorContext } from "../../context/error.context";
 import { tryCatch } from "../../helpers/tryCatch";
+import Opponent from "./opponent";
+import Owner from "./owner";
 import Button from "../../components/core/button";
 import Layout from "../../components/layout";
 

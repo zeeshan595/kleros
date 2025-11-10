@@ -1,11 +1,11 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { MoveType, useRpsGame } from "../../hooks/game.hook";
 import { useNavigate } from "react-router-dom";
 import { tryCatch } from "../../helpers/tryCatch";
-import NewGame from "./new-game";
-import Layout from "../../components/layout";
 import { LoadingContext } from "../../context/loading.context";
 import { ErrorContext } from "../../context/error.context";
+import NewGame from "./new-game";
+import Layout from "../../components/layout";
 
 export enum Options {
   Rock = "rock",
@@ -16,7 +16,7 @@ export enum Options {
 }
 
 export default function Home() {
-  const { loading, setLoading } = useContext(LoadingContext);
+  const { setLoading } = useContext(LoadingContext);
   const { setError } = useContext(ErrorContext);
   const { newGame } = useRpsGame();
   const navigate = useNavigate();

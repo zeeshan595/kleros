@@ -1,7 +1,7 @@
 import type { Props as SelectProps } from "./core/select";
+import type { ChangeEvent } from "react";
 import { MoveType } from "../hooks/game.hook";
 import Select from "./core/select";
-import type { ChangeEvent } from "react";
 
 export type Props = Omit<SelectProps<number>, "options" | "onChange"> & {
   onChange?: (move: MoveType) => void;
