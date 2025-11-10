@@ -2,8 +2,8 @@ import solc from "solc";
 import * as fs from "fs";
 
 const COMPILER_VERSION = "v0.4.26+commit.4563c3fc";
-const CONTRACTS_INPUT_DIR = "src";
-const CONTRACTS_OUTPUT_DIR = "dist";
+const CONTRACTS_INPUT_DIR = "contracts";
+const CONTRACTS_OUTPUT_DIR = "src/contracts";
 
 async function main() {
   const sol = await new Promise<typeof solc>((resolve, reject) => {
