@@ -24,11 +24,23 @@ export default function Broken() {
         "flex-col",
         "items-center",
         "justify-center",
+        "gap-4",
       ].join(" ")}
       style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
     >
       <h1 className="text-4xl">There was an issue</h1>
-      <p className="text-md">{error}</p>
+      <p
+        className={[
+          "text-md",
+          "wrap-break-word",
+          "overflow-y-scroll",
+          "max-w-[80vh]",
+          "min-h-10",
+          "max-h-[calc(80vh - 200px)]",
+        ].join(" ")}
+      >
+        {error}
+      </p>
       <Button onClick={onCloseClick}>Close</Button>
     </div>
   );
